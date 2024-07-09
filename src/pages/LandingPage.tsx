@@ -2,6 +2,7 @@ import { useState } from "react"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import About from "../components/About"
+import LatestArticles from "../components/LatestArticles"
 const LandingPage = () => {
     const [open, setOpen] = useState(false)
 
@@ -16,6 +17,7 @@ const LandingPage = () => {
             <Navbar open={open} handleClick={handleClick} />
             <Hero open={open} handleClick={handleClick} />
             <About />
+            <LatestArticles />
         </>
 
     )
