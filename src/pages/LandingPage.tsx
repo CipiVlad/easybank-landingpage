@@ -3,6 +3,7 @@ import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import About from "../components/About"
 import LatestArticles from "../components/LatestArticles"
+import Footer from "../components/Footer"
 const LandingPage = () => {
     const [open, setOpen] = useState(false)
 
@@ -18,6 +19,7 @@ const LandingPage = () => {
             <Hero open={open} handleClick={handleClick} />
             <About />
             <LatestArticles />
+            <Footer />
         </>
 
     )
