@@ -2,11 +2,16 @@ import HeroImgMobile from "./HeroImgMobile"
 
 interface Props {
     open: boolean
-    handleClick: () => void
 }
-const Hero = ({ open, handleClick }: Props) => {
+const Hero = ({ open }: Props) => {
     return (
-        <header>
+        <header
+            style={{
+                opacity: open ? 0.6 : 1,
+                backgroundColor: open ? "black" : "transparent",
+                transition: "all 0.5s ease",
+            }}
+        >
             <div className="hero-image hero-img-fade">
                 <HeroImgMobile open={open} />
             </div>
