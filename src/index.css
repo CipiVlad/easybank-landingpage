@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --font-family: 'Red Hat Display', sans-serif;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --fs-400: 16px;
+
+    --transition: all 0.3s ease-in-out;
+
+    --radius: 0.5rem;
+
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 1rem;
+    --spacing-4: 1.5rem;
+    --spacing-5: 3rem;
+
+    --gradient: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+/* navbar */
+@media screen and (min-width: 375px) {
+
+    .navbar {
+        z-index: 7;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav ul {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: white;
+        min-width: 355px;
+        min-height: 50vh;
+        padding: 4rem;
+        border-radius: 0.5rem;
+        top: 3.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul li {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    /* hero */
+    .hero-img-mockups {
+        background-image: url('../public//images/image-mockups.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+        min-height: 400px;
+        z-index: 2;
+        position: relative;
+        margin-top: -34rem;
+        margin-bottom: 1rem;
+
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+        font-weight: var(--fw-300);
+        color: var(--Dark-blue);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    header p {
+        font-size: 16px;
+        font-weight: var(--fw-500);
+        color: var(--GrayishBlue);
+        text-align: center;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+    }
+
+    header button {
+        display: block;
+        margin: 0 auto;
+        font-size: 1rem;
+        color: white;
+        background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+        border: 1px solid transparent;
+        padding: 15px 25px;
+        border-radius: 100px;
+    }
+
+    /* about */
+    #about {
+        text-align: center;
+        padding: 2rem;
+        background-color: var(--Very-pale-blue);
+        margin-top: 3rem;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+        font-weight: var(--fw-300);
+        color: var(--Dark-blue);
+        margin-bottom: 1rem;
+    }
+
+    #about p {
+        font-size: 16px;
+        font-weight: var(--fw-500);
+        color: var(--GrayishBlue);
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #about h3 {
+
+        font-size: 1.5rem;
+        font-weight: var(--fw-300);
+        color: var(--Desaturated-blue);
+        margin: 1rem;
+    }
+
+    .about-cards {
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}
