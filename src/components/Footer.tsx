@@ -63,7 +63,7 @@ const Footer = () => {
 
             <p className="attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-                Coded by
+                Coded with &hearts; by <span> </span>
                 <a href="https://cipi-dev.netlify.app/">
                     Cipi
                 </a>.

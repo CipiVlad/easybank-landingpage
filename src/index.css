@@ -69,7 +69,7 @@ body {
         flex-direction: column;
         list-style: none;
         background-color: white;
-        min-width: 345px;
+        min-width: 385px;
         min-height: 49vh;
         padding: 4rem;
         border-radius: 0.5rem;
@@ -95,7 +95,7 @@ body {
     /* hero */
     .hero-image {
         position: relative;
-        bottom: 20vh;
+        bottom: 14vh;
         z-index: -1;
     }
 
@@ -104,14 +104,14 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 90%;
-        min-height: 400px;
+        min-height: 425px;
         z-index: 3;
         position: relative;
         margin-top: -25rem;
     }
 
     header h1 {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
         font-weight: var(--fw-300);
         color: var(--Dark-blue);
         text-align: center;
@@ -149,7 +149,7 @@ body {
     }
 
     #about h2 {
-        font-size: 2rem;
+        font-size: 2.1rem;
         font-weight: var(--fw-300);
         color: var(--Dark-blue);
         margin-bottom: 1rem;
@@ -318,7 +318,9 @@ body {
     }
 
     footer .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(157, 68%, 30%);
+        text-transform: uppercase;
+        text-decoration: none;
 
     }
 
