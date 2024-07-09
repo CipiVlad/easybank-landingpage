@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +11,11 @@
     --Bright-blue: hsl(245, 75%, 52%);
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
-    --Dark-blue: hsl(223, 47%, 23%);
-
+    --Dark-blue: hsl(233, 26%, 24%);
     --GrayishBlue: hsl(233, 8%, 62%);
     --LightGrayishBlue: hsl(220, 16%, 96%);
     --VeryLightGray: hsl(0, 0%, 98%);
-    --font-family: 'Red Hat Display', sans-serif;
+    --font-family: 'Public Sans', sans-serif;
 
     --fw-300: 300;
     --fw-400: 400;
@@ -46,7 +47,12 @@ body {
 @media screen and (min-width: 375px) {
 
     .navbar {
-        z-index: 7;
+        z-index: 2;
+        position: relative;
+        background-color: white;
+        height: 3.5rem;
+        width: 100%;
+        box-shadow: var(--shadow);
     }
 
     nav {
@@ -63,33 +69,45 @@ body {
         flex-direction: column;
         list-style: none;
         background-color: white;
-        min-width: 355px;
-        min-height: 50vh;
+        min-width: 345px;
+        min-height: 49vh;
         padding: 4rem;
         border-radius: 0.5rem;
         top: 3.5rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 2rem 0;
     }
 
     nav ul li {
-        padding: 0.5rem;
+        padding: 0.9rem;
         border-radius: 0.5rem;
         cursor: pointer;
         text-align: center;
     }
 
+    nav ul li a {
+        text-decoration: none;
+        color: var(--Dark-blue);
+        font-size: 1.1rem;
+        font-weight: var(--fw-400);
+    }
+
     /* hero */
+    .hero-image {
+        position: relative;
+        bottom: 20vh;
+        z-index: -1;
+    }
+
     .hero-img-mockups {
         background-image: url('../public//images/image-mockups.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: 90%;
         min-height: 400px;
-        z-index: 2;
+        z-index: 3;
         position: relative;
-        margin-top: -34rem;
-        margin-bottom: 1rem;
-
+        margin-top: -25rem;
     }
 
     header h1 {
@@ -112,12 +130,13 @@ body {
     header button,
     footer button {
         display: block;
-        margin: 0 auto;
-        font-size: 1rem;
+        margin: 2rem auto;
+        font-size: 0.9rem;
+        font-weight: var(--fw-700);
         color: white;
         background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
         border: 1px solid transparent;
-        padding: 10px 25px;
+        padding: 13px 30px;
         border-radius: 100px;
     }
 
@@ -146,9 +165,9 @@ body {
 
     #about h3 {
 
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: var(--fw-300);
-        color: var(--Desaturated-blue);
+        color: var(--Dark-blue);
         margin: 1rem;
     }
 
@@ -252,7 +271,7 @@ body {
         gap: 1rem;
         justify-content: center;
         align-items: center;
-        margin: 1rem 0;
+        margin: 2rem 0;
     }
 
     footer .footer-icons li {
@@ -270,8 +289,10 @@ body {
         text-decoration: none;
         font-size: 14px;
         font-weight: var(--fw-500);
+        font-family: var(--font-family);
         color: white;
         margin-bottom: 0.5rem;
+
     }
 
     footer .sitemap a:last-child {

@@ -12,7 +12,7 @@ const Hero = ({ open, handleClick }: Props) => {
             </div>
             <h1>Next generation digital banking</h1>
             <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-            <button onClick={handleClick}>Request Invite</button>
+            <button>Request Invite</button>
         </header>
     )
 }
