@@ -12,12 +12,21 @@ const Hero = ({ open }: Props) => {
                 transition: "all 0.5s ease",
             }}
         >
-            <div className="hero-image hero-img-fade">
-                <HeroImgMobile open={open} />
+
+            <div className="hero-mobile-container">
+                <div className="hero-mobile-bg-img"></div>
+                <div className="hero-mobile-mockups"></div>
             </div>
-            <h1>Next generation digital banking</h1>
-            <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-            <button>Request Invite</button>
+            <div className="hero-desktop-container">
+                <div className="hero-desktop-bg-img"></div>
+                <div className="hero-desktop-mockups"></div>
+            </div>
+
+            <div className="hero-text">
+                <h1>Next generation digital banking</h1>
+                <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+                <button>Request Invite</button>
+            </div>
         </header>
     )
 }
