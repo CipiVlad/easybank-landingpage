@@ -9,6 +9,8 @@ interface Props {
 }
 
 const Navbar = ({ open, handleClick }: Props = { open: false, handleClick: () => { } }) => {
+    // 
+
     return (
         <nav className="navbar">
             <div className="logo">
@@ -28,7 +30,7 @@ const Navbar = ({ open, handleClick }: Props = { open: false, handleClick: () =>
             </div>
 
             {/* hamburger menu */}
-            <div onClick={handleClick}            >
+            <div className="hamburger-menu" onClick={handleClick}            >
                 {
                     open ? <CloseIcon /> : <HamburgerMenu />
                 }
@@ -39,6 +41,17 @@ const Navbar = ({ open, handleClick }: Props = { open: false, handleClick: () =>
                 open && <MobileNav />
             }
 
+            {/* desktop */}
+            <>
+                <ul className="desktop-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </>
+            <button className="desktop-btn">Request Invite</button>
         </nav>
     )
 }

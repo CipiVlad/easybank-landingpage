@@ -43,8 +43,16 @@ body {
     font-family: var(--font-family);
 }
 
+
 /* navbar */
 @media screen and (min-width: 375px) {
+    nav .desktop-btn {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
 
     .navbar {
         z-index: 2;
@@ -164,7 +172,6 @@ body {
     }
 
     #about h3 {
-
         font-size: 1.2rem;
         font-weight: var(--fw-300);
         color: var(--Dark-blue);
@@ -324,4 +331,54 @@ body {
 
     }
 
+}
+
+/* desktop */
+
+@media screen and (min-width: 1440px) {
+    nav .hamburger-menu {
+        display: none;
+    }
+
+    nav .mobile-nav {
+        display: none;
+    }
+
+    .navbar {
+        padding: 45px;
+    }
+
+    nav .desktop-nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 0;
+        min-width: 0;
+        box-shadow: none;
+    }
+
+    nav .desktop-btn {
+        display: block;
+        /* margin: 2rem auto; */
+        font-size: 0.9rem;
+        font-weight: var(--fw-700);
+        color: white;
+        background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+        border: 1px solid transparent;
+        padding: 13px 30px;
+        border-radius: 100px;
+    }
+
+    header {
+        background-image: url('../public/images/bg-hero-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 550px;
+    }
 }
