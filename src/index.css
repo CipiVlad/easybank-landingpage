@@ -470,20 +470,38 @@ body {
 
     /* about */
 
-    #about h2,
-    #about p {
+    #about {
+        padding: 4.5rem;
+    }
+
+    #about article h2 {
+        font-size: 2.5rem;
         text-align: left;
     }
 
-    #about p {
-        width: 45%;
+    #about h3 {
+        margin: 0;
+    }
+
+    #about article p {
+        font-size: 1.1rem;
+        width: 46%;
+        text-align: left;
+    }
+
+    .about-desktop-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
     }
 
     .about-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
+        padding: 1rem;
+        text-align: start;
     }
+
+
+
+
+
 }
