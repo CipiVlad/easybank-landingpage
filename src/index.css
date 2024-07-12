@@ -4,7 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+}
+
+html,
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: var(--font-family);
 }
 
 :root {
@@ -40,10 +47,7 @@
 
 }
 
-body {
-    font-family: var(--font-family);
-    overflow-x: hidden;
-}
+
 
 
 /* navbar */
@@ -353,9 +357,6 @@ body {
 /* desktop */
 
 @media screen and (min-width: 1440px) {
-    body {
-        overflow-x: hidden;
-    }
 
     nav .hamburger-menu {
         display: none;
@@ -366,7 +367,7 @@ body {
     }
 
     .navbar {
-        padding: 45px;
+        padding: 2.5rem 7.5rem;
     }
 
     nav .desktop-nav {
@@ -402,9 +403,9 @@ body {
         padding: 0 4.5rem;
         gap: 1rem;
         margin-bottom: 3rem;
-        width: 100%;
+        /* width: 100%;
         max-width: 1440px;
-        margin: 0 auto;
+        margin: 0 auto; */
         align-items: center;
         height: 50vh;
     }
@@ -438,15 +439,14 @@ body {
 
     .hero-desktop-bg-img {
         display: block;
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        height: auto;
+
         background-image: url('../public/images/bg-intro-desktop.svg');
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
         position: absolute;
-        top: 0;
-        left: 44%;
+        top: -7.5rem;
+        left: 34%;
         right: 0;
         bottom: 0;
         z-index: -1;
@@ -454,17 +454,15 @@ body {
 
     .hero-desktop-mockups {
         display: block;
-        position: absolute;
-        top: -7.5rem;
-        left: 40%;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        height: auto;
         background-image: url('../public/images/image-mockups.png');
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 40%;
+        position: absolute;
+        top: -7.5rem;
+        left: 58%;
+        right: 0;
+        bottom: 0;
     }
 
 
@@ -489,10 +487,14 @@ body {
         text-align: left;
     }
 
+    article {
+        margin-bottom: 2rem;
+    }
+
     .about-desktop-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .about-cards {
@@ -500,7 +502,38 @@ body {
         text-align: start;
     }
 
+    .about-cards svg {
+        margin-bottom: 2rem;
+    }
 
+    .about-cards h3,
+    .about-cards p {
+        margin: 2.5rem 0;
+    }
+
+
+    /* latest-articles */
+    #latest-articles {
+        padding: 4.5rem;
+    }
+
+    #latest-articles {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        /* padding: 1rem; */
+        text-align: start;
+    }
+
+    #latest-articles>h2 {
+        grid-column: span 4;
+        /* make the h2 span all 4 columns of the grid */
+        text-align: left;
+        font-size: 2.5rem;
+    }
+
+
+    /* footer */
 
 
 
