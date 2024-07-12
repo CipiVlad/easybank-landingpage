@@ -23,7 +23,7 @@ Users should be able to:
 ### Screenshot
 
 ![desktop](./public/design/desktop-preview.jpg)
-![mobile](./public/design/mobile-design.jpg)
+![mobile](./public/design/mobile-navigation.jpg)
 
 ### Links
 
